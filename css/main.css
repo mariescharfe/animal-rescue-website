@@ -1,0 +1,146 @@
+html {
+  font-family: 'Dosis', sans-serif;
+}
+
+h1, h2 {
+  color: #005056;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+background-color: #008090;
+}
+
+header nav a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  transition: 1s;
+}
+
+nav li:hover {
+  background-color: #005056;
+  transition: 1s;
+}
+
+footer {
+  background-color: #555;
+  color: white;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.limit {
+  max-width: 25em;
+}
+
+.border-cont {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.border-section {
+  border: 4px solid #005056;
+  border-radius: 8px;
+  padding: .5rem;
+  max-width: 20rem;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+fieldset {
+  border: 0;
+}
+
+textarea,
+select,
+input {
+  border-color: #005056;
+  border-radius: 5px;
+}
+
+.spacegrid div {
+  padding-right: .25em;
+}
+
+@media only screen and (min-width: 1em) {
+
+  footer ul {
+    display: none;
+  }
+
+}
+
+@media only screen and (min-width: 25em) {
+
+  .limit {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+}
+
+@media only screen and (min-width: 38em) {
+
+  header ul li {
+    display: inline-block;
+    width: 24%;
+  }
+
+  footer ul {
+    display: inline-block;
+  }
+
+
+}
+
+@media only screen and (min-width: 60em) {
+
+  .limit {
+    text-align: left;
+  }
+
+  .no-pad {
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .border-section {
+    max-width: 290px;
+    margin-left: .25rem;
+    margin-right: .25rem;
+  }
+
+  .border-cont {
+    width: auto;
+  }
+
+  .central {
+    margin: 0 auto;
+    width: 60em;
+  }
+
+  .central-2 {
+    margin: 0 auto;
+    width: 50em;
+  }
+
+  .border-stretch {
+    min-height: 28.25rem;
+  }
+
+  .spacegrid div {
+    padding-right: .75em;
+  }
+
+}

@@ -40,8 +40,10 @@
   </header>
 
   <main role="main" id="main" tabindex="0">
-    <section class="embed embed-16by9">
-      <img class="embed-item" src="images/puma.jpg" alt="puma">
+    <section class="wrapper cap">
+      <div class="embed embed-16by9">
+        <img class="embed-item" src="images/puma.jpg" alt="puma">
+      </div>
     </section>
     <section class="central-2">
       <div class="gutter-1-2 pad-t-1-2">
@@ -49,10 +51,10 @@
         <p class="milli push-0">Save a life!</p>
       </div>
       <form method="POST" action="https://formspree.io/scha0209@algonquinlive.com">
-        <fieldset class="island-1-2 spacegrid">
+        <fieldset class="island-1-2">
           <legend class="hidden">Adoption Form</legend>
           <div class="grid">
-            <div class=" unit [ xs-1 s-1 m-1-2 ]">
+            <div class="unit [ xs-1 s-1 m-1 l-1-2 ] spacegrid">
               <div class="pad-t-1-2">
                 <label for="firstname">First Name</label>
                 <input class="micro" required id="firstname" name="firstname" type="text">
@@ -101,7 +103,7 @@
                 <input class="push-1-2" id="postal" name="postal">
               </div>
             </div>
-            <div class=" unit [ xs-1 s-1 m-1-2 ]">
+            <div class=" unit [ xs-1 s-1 m-1 l-1-2 ]">
               <div class="pad-t-1-2">
                 <label for="cc">Credit Card Number</label>
                 <input class="micro" id="cc" name="cc" type="number">
@@ -162,12 +164,12 @@
       </form>
       <div>
         <div class="push text-center">
-          <button aria-label="Adopt one of our rescues." class="btn btn-light micro" type="submit">Adopt</button>
+          <button aria-label="Adopt one of our rescues." class="btn btn-light" type="submit">Adopt</button>
         </div>
       </div>
     </section>
-    <div class="hidden">
-      <a href="adopt.html" aria-label="Adopt one of our rescues."></a>
+    <div class="push text-center">
+      <a class="btn btn-light" href="adopt.html" aria-label="Go back to view the rescues page.">Review Rescues</a>
     </div>
   </main>
 

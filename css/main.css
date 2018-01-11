@@ -107,8 +107,27 @@ input[type="radio"] + label::before {
   border-color: #005056;
 }
 
+input,
+select {
+  font-family: "Open Sans", sans-serif;
+}
+
+label:focus,
+input:focus,
+select:focus,
+[type="checkbox"]:focus + label::before,
+[type="radio"]:focus + label::before {
+  background-color: #f9e8ae;
+  outline: none;
+}
+
 .spacegrid div {
   padding-right: .25em;
+}
+
+.cap {
+  max-height: 517px;
+  max-width: 920px;
 }
 
 @media only screen and (min-width: 1em) {
@@ -178,6 +197,11 @@ input[type="radio"] + label::before {
 
   .spacegrid div {
     padding-right: .75em;
+  }
+
+  .cap {
+    margin-top: 2em;
+    margin-bottom: 1em;
   }
 
 }

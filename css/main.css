@@ -29,21 +29,33 @@ header {
   background-color: #008090;
 }
 
-header nav a {
+nav a {
   text-decoration: none;
   display: inline-block;
   width: 100%;
   color: #fff;
-  transition: 1s;
+  transition: 500ms;
 }
 
-nav li:hover {
+nav a:hover {
   background-color: #005056;
-  transition: 1s;
+  color: #fff;
+  transition: 500ms;
 }
 
 nav li .active {
+  background-color: #fff;
+  color: #005056;
+}
+
+nav li .active:hover {
   background-color: #005056;
+  color: #fff;
+}
+
+.wrapper-2 {
+  max-width: 60em;
+  margin: 0 auto;
 }
 
 .limit {

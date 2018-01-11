@@ -48,8 +48,16 @@
           <div class="grid">
             <div class=" unit [ xs-1 s-1 m-1-2 ]">
               <div class="pad-t-1-2">
-                <label for="name">Name</label>
-                <input class="micro" id="name" name="name">
+                <label for="firstname">First Name</label>
+                <input class="micro" id="firstname" name="firstname" type="text">
+              </div>
+              <div class="pad-t-1-2">
+                <label for="midname">Middle Name</label>
+                <input class="micro" id="midname" name="midname" type="text">
+              </div>
+              <div class="pad-t-1-2">
+                <label for="lastname">Last Name</label>
+                <input class="micro" id="lastname" name="lastname" type="text">
               </div>
               <div class="pad-t-1-2">
                 <label for="dob">Date of Birth</label>
@@ -79,69 +87,62 @@
                 </select>
               </div>
               <div class="pad-t-1-2">
-                <label for="name">Name</label>
-                <input class="micro" id="name" name="name">
+                <label for="phone">Phone Number</label>
+                <input class="micro" id="phone" name="phone" type="tel">
               </div>
               <div class="pad-t-1-2">
-                <label for="dob">Date of Birth</label>
-                <input class="micro" id="dob" name="dob" type="date">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="address">Address</label>
-                <input class="micro" id="address" name="address">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="province">Province</label>
-                <select class="micro" id="province" name="province">
-                  <option value="">Select a province</option>
-                  <option>Alberta</option>
-                  <option>British Columbia</option>
-                  <option>Manitoba</option>
-                  <option>New Brunswick</option>
-                  <option>Newfoundland &amp; Labrador</option>
-                  <option>Northwest Territories</option>
-                  <option>Nova Scotia</option>
-                  <option>Nunavut</option>
-                  <option>Ontario</option>
-                  <option>Prince Edward Island</option>
-                  <option>Québec</option>
-                  <option>Saskatchewan</option>
-                  <option>Yukon</option>
-                </select>
+                <label for="postal">Postal code</label>
+                <input class="push-1-2" id="postal" name="postal">
               </div>
             </div>
             <div class=" unit [ xs-1 s-1 m-1-2 ]">
               <div class="pad-t-1-2">
-                <label for="phone">Phone Number</label>
-                <input class="micro" id="phone" name="phone" type="tel">
+                <label for="cc">Credit Card Number</label>
+                <input class="micro" id="cc" name="cc" type="number">
+              </div>
+              <div class="pad-t-1-2">
+                <label for="expiry">Expiry Date</label>
+                <input class="micro" id="expiry" name="expiry" type="date">
+              </div>
+              <div class="pad-t-1-2">
+                <label for="cvc">CVC</label>
+                <input class="micro" id="cvc" name="cvc" type="number">
+              </div>
+              <div class="pad-t-1-2">
+                <label for="cardname">Name on Card</label>
+                <input class="micro" id="cardname" name="cardname" type="text">
+              </div>
+              <legend class="pad-t-1-2">Have you ever had pets before?</legend>
+              <div class="pad-t-1-8 pad-b-1-8">
+                <div class="inline-block gutter-1-2 push-r">
+                  <input id="yes-pets" name="pets" type="radio">
+                  <label for="yes-pets">Yes</label>
+                </div>
+                <div class="inline-block">
+                  <input id="no-pets" name="pets" type="radio">
+                  <label for="no-pets">No</label>
+                </div>
+              </div>
+              <legend class="pad-t-1-4">What type of pets have you had?</legend>
+              <div class="inline-block gutter-1-2 push-r pad-t-1-4 pad-b-1-8">
+                <input id="dog" name="pettype" type="checkbox">
+                <label for="dog">Dog</label>
+              </div>
+              <div class="inline-block push-r pad-t-1-4 pad-b-1-8">
+                <input id="cat" name="pettype" type="checkbox">
+                <label for="cat">Cat</label>
+              </div>
+              <div class="inline-block pad-t-1-4 pad-b-1-8">
+                <input id="other" name="pettype" type="checkbox">
+                <label for="other">Other</label>
+              </div>
+              <div class="pad-t-1-4">
+                <label for="specify">If other, please specify</label>
+                <input class="micro" id="specify" name="specify" type="text">
               </div>
               <div class="pad-t-1-2">
                 <label for="email">Email</label>
                 <input class="micro" id="email" name="email" type="email">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="username-2">Username</label>
-                <input class="micro" id="username-2" name="username-2">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="password-2">Password</label>
-                <input class="micro" id="password-2" name="password-2" type="password">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="phone">Phone Number</label>
-                <input class="micro" id="phone" name="phone" type="tel">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="email">Email</label>
-                <input class="micro" id="email" name="email" type="email">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="username-2">Username</label>
-                <input class="micro" id="username-2" name="username-2">
-              </div>
-              <div class="pad-t-1-2">
-                <label for="password-2">Password</label>
-                <input class="micro" id="password-2" name="password-2" type="password">
               </div>
             </div>
           </div>
@@ -167,7 +168,7 @@
     </div>
     <div class="unit xs-1 s-1 m-1-4 text-left">
       <ul class="list-group push-0 gutter-1-2">
-        <li class="micro"><a href="#">What You Can Do</a></li>
+        <li class="micro"><a href="adopt.html">What You Can Do</a></li>
         <li class="micro"><a href="adopt.html">Adopt</a></li>
       </ul>
     </div>

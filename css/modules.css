@@ -49,6 +49,10 @@ video {
   vertical-align: baseline;
 }
 
+.inline-block, .ib {
+  display: inline-block;
+}
+
 template {
   display: none;
 }

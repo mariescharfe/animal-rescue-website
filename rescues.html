@@ -14,14 +14,19 @@
 </head>
 <body>
 
-  <header>
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main">Skip to the main content</a></li>
+  </ul>
+
+  <header role="banner">
     <div class="push-1-2 pad-t-1-2 text-center">
       <a href="index.html">
-        <img class="i-64" src="images/wwf-logo.svg" alt="">
+        <img class="i-64" src="images/wwf-logo.svg" alt="WWF Logo">
       </a>
     </div>
     <div>
-      <nav class="wrapper">
+      <nav role="navigation" id="nav" tabindex="0" class="wrapper">
         <ul class="list-group text-center push-0">
           <li><a class="pad-t-1-4 pad-b-1-4" href="index.html">What We Do</a></li>
           <li><a class="pad-t-1-4 pad-b-1-4" href="#">What You Can Do</a></li>
@@ -32,7 +37,7 @@
     </div>
   </header>
 
-  <main>
+  <main role="main" id="main" tabindex="0">
     <div class="grid wrapper">
       <section class="island-1-2 limit unit [ xs-1 s-1 m-1 l-1-3 xl-1-3 ]">
         <h1 class="text-upper zetta push-1-2 caption">Rescues</h1>
@@ -75,7 +80,7 @@
     </div>
   </main>
 
-  <footer class="island grid">
+  <footer role="contentinfo" class="island grid">
     <div class="unit xs-1 s-1 m-1-4">
       <p class="push-0"><small class="micro text-left">© World Wildlife Fund 2018</small></p>
     </div>
@@ -93,13 +98,6 @@
     </div>
     <div class="unit xs-1 s-1 m-1-4">
       <ol class="list-group-inline push-0 text-right">
-        <li>
-          <i class="icon i-20">
-            <a href="https://www.facebook.com/">
-              <img class="social social-fb valign-middle" src="images/facebook-logo.svg" alt="facebook">
-            </a>
-          </i>
-        </li>
         <li>
           <i class="icon i-20">
             <a href="https://instagram.com/">

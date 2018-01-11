@@ -14,14 +14,19 @@
 </head>
 <body>
 
-  <header>
+  <ul class="skip-links">
+    <li><a href="#nav">Skip to navigation</a></li>
+    <li><a href="#main">Skip to the main content</a></li>
+  </ul>
+
+  <header role="banner">
     <div class="push-1-2 pad-t-1-2 text-center">
       <a href="index.html">
-        <img class="i-64" src="images/wwf-logo.svg" alt="">
+        <img class="i-64" src="images/wwf-logo.svg" alt="WWF Logo">
       </a>
     </div>
     <div>
-      <nav class="wrapper">
+      <nav role="navigation" id="nav" tabindex="0" class="wrapper">
         <ul class="list-group text-center push-0">
           <li><a class="active pad-t-1-4 pad-b-1-4" href="index.html">What We Do</a></li>
           <li><a class="pad-t-1-4 pad-b-1-4" href="#">What You Can Do</a></li>
@@ -32,7 +37,7 @@
     </div>
   </header>
 
-  <main class="max-length">
+  <main role="main" id="main" tabindex="0" class="max-length">
     <h1 class="hidden">What We Do</h1>
     <section class="island-1-2">
       <h2 class="push-1-2 tena">How</h2>
@@ -57,7 +62,7 @@
     </section>
   </main>
 
-  <footer class="island grid">
+  <footer role="contentinfo" class="island grid">
     <div class="unit xs-1 s-1 m-1-4">
       <p class="push-0"><small class="micro text-left">© World Wildlife Fund 2018</small></p>
     </div>

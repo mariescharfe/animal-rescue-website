@@ -29,7 +29,7 @@
       <nav role="navigation" id="nav" tabindex="0" class="wrapper">
         <ul class="list-group text-center push-0">
           <li><a class="pad-t-1-4 pad-b-1-4" href="index.html">What We Do</a></li>
-          <li><a class="pad-t-1-4 pad-b-1-4" href="#">What You Can Do</a></li>
+          <li><a class="pad-t-1-4 pad-b-1-4" href="adopt.html">What You Can Do</a></li>
           <li><a class="pad-t-1-4 pad-b-1-4" href="rescues.html">Rescues</a></li>
           <li><a class="active pad-t-1-4 pad-b-1-4" href="adopt.html">Adopt</a></li>
         </ul>
@@ -40,16 +40,17 @@
   <main role="main" id="main" tabindex="0">
     <section class="central-2">
       <div class="gutter-1-2 pad-t-1-2">
-        <h2 class="text-upper zetta push-0 caption">Adopt</h2>
+        <h1 class="text-upper zetta push-0 caption">Adopt</h1>
         <p class="milli push-0">Save a life!</p>
       </div>
       <form method="POST" action="https://formspree.io/scha0209@algonquinlive.com">
         <fieldset class="island-1-2 spacegrid">
+          <legend class="hidden">Adoption Form</legend>
           <div class="grid">
             <div class=" unit [ xs-1 s-1 m-1-2 ]">
               <div class="pad-t-1-2">
                 <label for="firstname">First Name</label>
-                <input class="micro" id="firstname" name="firstname" type="text">
+                <input class="micro" required id="firstname" name="firstname" type="text">
               </div>
               <div class="pad-t-1-2">
                 <label for="midname">Middle Name</label>
@@ -57,7 +58,7 @@
               </div>
               <div class="pad-t-1-2">
                 <label for="lastname">Last Name</label>
-                <input class="micro" id="lastname" name="lastname" type="text">
+                <input class="micro" required id="lastname" name="lastname" type="text">
               </div>
               <div class="pad-t-1-2">
                 <label for="dob">Date of Birth</label>
@@ -112,28 +113,34 @@
                 <label for="cardname">Name on Card</label>
                 <input class="micro" id="cardname" name="cardname" type="text">
               </div>
-              <legend class="pad-t-1-2">Have you ever had pets before?</legend>
+              <div>
+                <input class="hidden" id="have" name="have" type="text">
+                <label for="have" class="push-0 pad-t-1-4">Have you ever had pets before?</label>
+              </div>
               <div class="pad-t-1-8 pad-b-1-8">
                 <div class="inline-block gutter-1-2 push-r">
-                  <input id="yes-pets" name="pets" type="radio">
+                  <input id="yes-pets" name="pets1" type="radio">
                   <label for="yes-pets">Yes</label>
                 </div>
                 <div class="inline-block">
-                  <input id="no-pets" name="pets" type="radio">
+                  <input id="no-pets" name="pets2" type="radio">
                   <label for="no-pets">No</label>
                 </div>
               </div>
-              <legend class="pad-t-1-4">What type of pets have you had?</legend>
-              <div class="inline-block gutter-1-2 push-r pad-t-1-4 pad-b-1-8">
-                <input id="dog" name="pettype" type="checkbox">
+              <div>
+                <input class="hidden" id="what" name="what" type="text">
+                <label for="what" class="push-0 pad-t-1-4">What type of pets have you had?</label>
+              </div>
+              <div class="inline-block gutter-1-2 push-r pad-t-1-4 pad-b-1-4">
+                <input id="dog" name="pettype1" type="checkbox">
                 <label for="dog">Dog</label>
               </div>
-              <div class="inline-block push-r pad-t-1-4 pad-b-1-8">
-                <input id="cat" name="pettype" type="checkbox">
+              <div class="inline-block push-r pad-t-1-4 pad-b-1-4">
+                <input id="cat" name="pettype2" type="checkbox">
                 <label for="cat">Cat</label>
               </div>
-              <div class="inline-block pad-t-1-4 pad-b-1-8">
-                <input id="other" name="pettype" type="checkbox">
+              <div class="inline-block pad-t-1-4 pad-b-1-4">
+                <input id="other" name="pettype3" type="checkbox">
                 <label for="other">Other</label>
               </div>
               <div class="pad-t-1-4">
@@ -150,10 +157,13 @@
       </form>
       <div>
         <div class="push text-center">
-          <button class="btn micro" type="submit">Adopt!</button>
+          <button class="btn btn-light micro" type="submit">Adopt</button>
         </div>
       </div>
     </section>
+    <div class="hidden">
+      <a href="adopt.html"></a>
+    </div>
   </main>
 
   <footer role="contentinfo" class="island grid">
